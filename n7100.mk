@@ -55,12 +55,12 @@ PRODUCT_PACKAGES += \
 #    SamsungServiceMode
 
 # NFC
-#PRODUCT_PACKAGES += \
-#    nfc.exynos4 \
-#    libnfc \
-#    libnfc_jni \
-#    Nfc \
-#    Tag
+PRODUCT_PACKAGES += \
+    nfc.exynos4 \
+    libnfc \
+    libnfc_jni \
+    Nfc \
+    Tag
 
 PRODUCT_COPY_FILES += \
     packages/apps/Nfc/migrate_nfc.txt:system/etc/updatecmds/migrate_nfc.txt \
