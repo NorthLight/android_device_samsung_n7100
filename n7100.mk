@@ -42,10 +42,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.xml:system/etc/gps.xml
 
-# Camera FW
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/80cfw:system/etc/init.d/80cfw
-
 # Product specific Packages
 PRODUCT_PACKAGES += \
     GalaxyNote2Settings \
@@ -80,7 +76,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.android.nfc_extras
 
-#$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
